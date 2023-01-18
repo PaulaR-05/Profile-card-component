@@ -29,8 +29,14 @@ body {
 }
 
 body {
+  background: var(--Dark-cyan);
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 img,
@@ -59,20 +65,11 @@ h6 {
   overflow-wrap: break-word;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Kumbh Sans", sans-serif;
-}
-
 main {
   border: none;
-  box-shadow: 1px 1px 1px 1px rgb(241, 240, 240);
   border-radius: 1em;
   text-align: center;
+  background-color: white;
 }
 
 svg {
@@ -105,7 +102,7 @@ main p {
 
 ul {
   border-top: 1px solid rgb(240, 238, 238);
-  padding: 1em 0.7em 1em 0em;
+  padding: 1.5em 0.6em 1.5em 0em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
