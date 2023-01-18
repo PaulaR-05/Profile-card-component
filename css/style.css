@@ -1,0 +1,125 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgb(241, 240, 240);
+  border-radius: 1em;
+  text-align: center;
+}
+
+svg {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+main img {
+  border-radius: 50%;
+  margin: -3em auto 0;
+}
+
+main h1 {
+  padding: 1.1em 0 0.1em;
+  font-size: 18px;
+}
+
+main h1 span {
+  color: var(--Dark-gray);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+main p {
+  padding-bottom: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--Dark-gray);
+}
+
+ul {
+  border-top: 1px solid rgb(240, 238, 238);
+  padding: 1em 0.7em 1em 0em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+ul li span {
+  font-size: 0.7em;
+  font-weight: 400;
+  color: var(--Dark-gray);
+  letter-spacing: 1.5px;
+}
