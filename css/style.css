@@ -29,7 +29,10 @@ body {
 }
 
 body {
-  background: var(--Dark-cyan);
+  background: url(../images/bg-pattern-bottom.svg) bottom -600px right -250px
+      no-repeat,
+    url(../images/bg-pattern-top.svg) top -500px left -300px no-repeat;
+  background-color: var(--Dark-cyan);
   line-height: 1.5;
   min-height: 100vh;
   display: flex;
@@ -77,20 +80,29 @@ svg {
   border-top-right-radius: 1em;
 }
 
-main img {
+.victor-img img {
   border-radius: 50%;
-  margin: -3em auto 0;
+  border: 7px solid #fefefe;
+  transform: translateY(-50%);
+  margin-left: 7.5em;
+}
+
+.background-container img {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
 }
 
 main h1 {
-  padding: 1.1em 0 0.1em;
   font-size: 18px;
+  margin-top: -40px;
+  margin-bottom: 0.2em;
 }
 
 main h1 span {
   color: var(--Dark-gray);
   font-size: 18px;
   font-weight: 400;
+  margin-left: 0.2em;
 }
 
 main p {
@@ -119,4 +131,13 @@ ul li span {
   font-weight: 400;
   color: var(--Dark-gray);
   letter-spacing: 1.5px;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    background: url(../images/bg-pattern-bottom.svg) bottom -700px right -550px
+        no-repeat,
+      url(../images/bg-pattern-top.svg) top -700px left -600px no-repeat;
+    background-color: var(--Dark-cyan);
+  }
 }
